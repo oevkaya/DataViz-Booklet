@@ -2,10 +2,10 @@ project:
   type: book
 
 book:
-  title: "Modern Polars"
-  author: "Kevin Heavey"
+  title: "Data Visualization Booklet"
+  author: "Selin Aytan, Idil Tuzkaya and Ozan Evkaya"
   favicon: polar-bear-airpods-no-background.png
-  description: A side-by-side comparison of the Polars and Pandas libraries.
+  description: An illustrative booklet using various size data sets.
   keyword: polars, pandas, python, dataframe, performance, data science, data engineering
   url: https://kevinheavey.github.io/modern-polars/
   sidebar: 
