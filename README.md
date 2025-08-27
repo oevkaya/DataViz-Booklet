@@ -1,9 +1,5 @@
 # Data Visualization Booklet 
 
-This repository includes the necessary materials for the Data Visualization Booklet created by 
+This repository includes the necessary materials for the Data Visualization Booklet created by Selin Aytan, Idil Tuzkaya and Ozan Evkaya during summer 2025, under the Erasmus+ internship period. 
 
-- Ozan Evkaya
-- Selin Aytan
-- Idil Tuzkaya
-
-during summer 2025, under the Erasmus+ internship visiting 
+This booklet project aims to deliver a new quarto based data visualization open-source book to explore the ideas and computations along with visualizations in classical size and big size data sets by
