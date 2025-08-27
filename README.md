@@ -1,3 +1,9 @@
-# Modern Polars
+# Data Visualization Booklet 
 
-The repository for the [Modern Polars](https://kevinheavey.github.io/modern-polars/) book.
+This repository includes the necessary materials for the Data Visualization Booklet created by 
+
+- Ozan Evkaya
+- Selin Aytan
+- Idil Tuzkaya
+
+during summer 2025, under the Erasmus+ internship visiting 
