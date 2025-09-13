@@ -1,0 +1,40 @@
+# Introduction (before diving) {#sec-indexing}
+
+In today's world, with the explosive growth of data, deriving valuable insights and presenting them in a meaningful way has become ever more
+essential. Particularly, when working with big data, statistical analysis alone is often insufficient; supporting these analyses with
+powerful visualizations should be regarded as key priority in data-driven decision making.
+
+## Purpose of new writing (No Dataframes Here)
+
+This booklet writing aims to explore how classic visualization techniques are applied to "small" to "moderate" datasets to the realm of big data. 
+Our created examples aim to demonstrate that data visualization is not merely about creating graphs, but about generating meaningful insights. 
+
+It explores which types of graphs are suitable for different data structures, how to
+construct them using small to moderate datasets, and how these techniques applied when it comes to big data. Furthermore, the
+interactive dashboards and visualizations we used in this booklet targets foster engagement with reader. By doing so, we aim to contribute
+open-source materials and support R community. 
+
+Main focuses and side benefits of diving into this booklet are:
+
+- Improving practical skills while dealing with big data.
+- Utilizing R tools such as Spark, Arrow, ggplot2, and tmap in order to create scalable and effective visual representations.
+- Highlighting the differences between different types of data, and appyling proper visualizations for each.
+- Safeguarding that visualizations are accessible and interpretable for both technical and general users.
+- Promoting scientific transparency by designing reproducible analysis process.
+
+In addition to the well-known cases of the data viz examples over small data sets, we intend to bridge the gap between big data and
+data visualization, illustrating how technical tools in data science can be used for powerful representations.
+
+## Overview of Datasets Used
+
+**Scottish Index of Multiple Deprivation 2020:** 
+
+The Scottish Index of Multiple Deprivation is a relative measure of deprivation across 6,976
+small areas (called data zones). If an area is identified as ‘deprived’, this can relate to people having a low income but it can also mean fewer
+resources or opportunities. SIMD looks at the extent to which an area is deprived across seven domains: income, employment, education, health,
+access to services, crime and housing. The dataset description was obtained from the Scottish Government's [Official SIMD
+Documentation](https://www.gov.scot/collections/scottish-index-of-multiple-deprivation-2020/)
+
+**Fringe Festival Data Set 2024:** 
+
+Check from here: https://github.com/idiltuzkaya/big_data_viz/tree/main

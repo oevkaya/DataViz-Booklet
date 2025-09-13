@@ -1,71 +1,117 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # Preface {.unnumbered}
 
-This is a side-by-side comparison of the [Polars](https://www.pola.rs/)
-and [Pandas](https://pandas.pydata.org/) dataframe libraries,
-based on [Modern Pandas](https://tomaugspurger.github.io/posts/modern-8-scaling/) by Tom Augsburger.
+This booklet writing project was carried out as part of a summer
+internship at the University of Edinburgh, supported by the Erasmus+
+programme during 2025. As a small group, we collaborated on a weekly
+basis to improve the examples that we curated throughout the process.
 
-(In case you haven't heard, Polars is a very fast and elegant dataframe libary that does the same kinds of things Pandas does.)
+This is a practical booklet created for data visualization examples in R
+environment using specific libraries, mainly focusing on the built in
+functions from the well known [`ggplot2`](https://ggplot2.tidyverse.org/)
+library, and certain extensions of `ggplot2` library and some packages
+for the big data implementation.
 
-The bulk of this book is structured examples of idiomatic Polars and Pandas code, with commentary on the API and performance of both.
+> The simple graph has brought more information to the data analyst's mind than any other device. (John Tukey)
 
-For the most part, I argue that Polars is "better" than Pandas, though I do try and make it clear when Polars is lacking a Pandas feature or is otherwise disappointing.
+## Motivation and Goal
 
-## Who is this for?
+This booklet was born out of a growing need to communicate complex data
+in a clear and accessible way. As data grows in volume and complexity,
+visual tools have become essential for uncovering insights that might
+otherwise remain hidden. Motivated by a personal interest in data
+visualization, this project also aims to fill the gaps left by existing
+resources---many of which focus either too heavily on code or abstract
+theory.
 
-This is not a beginner's introduction to data programming, though you certainly don't need to be an expert to read it. If you have some familiarity with any dataframe library, most of the examples should make sense, but if you're familiar with Pandas they'll make even more sense because all the Polars code is accompanied by the equivalent Pandas code.
+Our goal is to provide a guide that is technically sound yet simple and
+intuitive, aimed at readers with a basic understanding of data. While
+various tools exist for visualization, this booklet focuses primarily on
+R programming, emphasizing its strengths in flexibility,
+reproducibility, and statistical integration.
 
-You don't need to have read *Modern Pandas*, though I of course think it's a great read.
+Specifically, various data visualization packages in R are underlined
+and certain packages are examined for certain examples. While creating
+some data visualization, our interest lies in the effective data
+storytelling from visual to its interpretation.
+
+> Words and pictures belong together. (Edward R. Tufte)
+
+## Target Audience
+
+This booklet is intended for students, early-stage researchers, and data enthusiasts who want to strengthen their understanding of data visualization using R. It assumes only a basic familiarity with data analysis and aims to present both core principles and practical examples in a clear and accessible way, making it useful for both beginners and those looking to refresh their skills.
+
+## Initial Thoughts
+
+Throughout the project, we encountered several challenges---both
+technical and conceptual. Despite these challenges, we approached each
+problem methodically---consulting documentation, testing alternative
+solutions, and learning from examples and community discussions. All
+these faced and resolved challenges are the part of learning process
+while writing our examples.
+
+-   One of the first difficulties was handling large and complex
+    datasets efficiently within the R environment. Some of the packages
+    required for big data visualization demanded careful memory
+    management and unfamiliar workflows, especially when working with
+    tools like SparkR and Arrow.
+
+-   Another major challenge was choosing the right type of visualization
+    for different kinds of data and ensuring that the graphics remained
+    both accurate and interpretable. It often took multiple iterations
+    to find the right balance between simplicity and completeness.
+
+-   We also spent considerable time understanding the underlying
+    structure of the data and preparing it for analysis. Missing values,
+    inconsistent formats, and merging different data sources required a
+    lot of manual adjustment and trial-and-error.
 
 ## Why?
 
-There's this weird phenomenon where people write data programming code as if they hate themselves.
-Many of them are academic or quant types who seem to have some complex about being "bad at coding".
-Armchair psychology aside, lots of clever folk keep doing [really dumb stuff](https://www.aidancooper.co.uk/pandas-anti-patterns/)
-with Pandas, and at some point you have to wonder if the Pandas API is too difficult for its users.
+On major motivation is to understand the importance of data
+visualization of various size data sets and available toolkit with their
+pros and cons. Additionally, even if there are other open source R-based
+books, many of them generally just share the code in certain examples
+without highlighting the underlying process to reach the final visual
+image. Another driving force is to create a more comprehensive open
+source booklet by touching not only on the data visuals in R in a
+classical way but also giving certain aspects about the investigation of
+big data, and added design perspective.
 
-At the very least, articles like [Minimally Sufficient Pandas](https://www.dunderdata.com/blog/minimally-sufficient-pandas)
-make a compelling case for Pandas having too much going on.
+All the open source books available in the field and authors recent
+experiences are the major source of the answer of this question.
 
-Having used Pandas a lot, I *think* Polars is more intuitive and does a better job of having One Obvious Way to do stuff. 
-It's also much faster at most things, even when you do Pandas the right way.
+## For Reproducibility
 
-Hopefully this work shows you how, why and when to prefer Polars.
+In order to create the graphs in this book, you'll need to install a
+number of optional R packages. Most of these packages are hosted on the
+Comprehensive R Archive Network (CRAN). To install all of these CRAN
+packages, run the following code in the RStudio console window.
 
-## Credit
+```{r, eval=FALSE, echo=TRUE}
+# Firs install if the specified package is not installed before by uncommenting below
+# install.packages('ggplot2')
 
-The Pandas examples are mostly lifted from Tom's articles, with some updates for data that's no longer available, and some
-code changes to reflect how Pandas is written in 2023. This isn't just me being lazy - I want to draw on Pandas examples that
-quite a lot of people are already familiar with.
-
-So credit goes to Tom for the Pandas examples, for most of the data
-fetching code and for the general structure of the articles.
-Meanwhile the text content and the Polars examples are from me.
-
-## Running the code yourself
-
-You can install the exact packages that the book uses with the [env.yml](https://github.com/kevinheavey/modern-polars/blob/master/env.yml) file:
-
-```shell
-mamba env create -f env.yml
-```
-
-If you're not using mamba/conda you can install the following package versions and it should work:
+library(ggplot2)
 
 ```
-polars: 1.0.0
-pyarrow: 10.0.1
-pandas: 2.2.2
-numpy: 1.26.4
-fsspec: 2024.6.1
-matplotlib: 3.8.0
-seaborn: 0.13.2
-statsmodels: 0.14.2
-```
 
-### Data
+To reproduce specific examples, you can rely on any given package the
+first time it is needed in your code chunk, console or R file.
+Generally, after getting all above mentioned packages, you should be
+ready to reproduce all the examples we shared in this booklet.
 
-All the data fetching code is included, but will eventually break as websites change or shut down. The smaller datasets have been checked in [here](https://github.com/kevinheavey/modern-polars/tree/master/data) for posterity.
+## Citing
 
-## Contributing
+Please cite this booklet if you use for any teaching and research
+purpose as follows;
 
-This book is free and open source, so please do [open an issue](https://github.com/kevinheavey/modern-polars/issues/new) if you notice a problem!
+::: {.callout-note}
+lorem
+:::
+

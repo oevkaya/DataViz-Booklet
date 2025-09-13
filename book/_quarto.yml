@@ -6,44 +6,35 @@ book:
   author: "Selin Aytan, Idil Tuzkaya and Ozan Evkaya"
   favicon: polar-bear-airpods-no-background.png
   description: An illustrative booklet using various size data sets.
-  keyword: polars, pandas, python, dataframe, performance, data science, data engineering
-  url: https://kevinheavey.github.io/modern-polars/
+  keyword: data science, data visualization, big data, ggplot2, data wrangling
   sidebar: 
-    background: "#F5F5F5"
-    logo: polar-bear-airpods-no-background.png
+    background: "#B7E892"
+    logo: SoM-image.jpeg
     search: true
-  repo-url: https://github.com/kevinheavey/modern-polars/
+  repo-url: https://github.com/oevkaya/DataViz-Booklet
   repo-subdir: book
   repo-branch: master
   repo-actions: [edit, issue, source]
   sharing: [twitter, facebook, linkedin]
-  image: polar-bear-airpods-no-background.png
+  image: SoM-image.jpeg
   comments:
     giscus:
-      repo: kevinheavey/modern-polars
+      repo: oevkaya/DataViz-Booklet
   open-graph:
     image: https://github.com/kevinheavey/modern-polars/raw/master/book/resized-og-polar-bear-airpods-no-background.png
-    description: A side-by-side comparison of the Polars and Pandas libraries.
+    description: A Quarto-based booklet exploring data viz on small and big data sets.
 
   chapters:
     - index.qmd
-    - indexing.qmd
-    - method_chaining.qmd
-    - performance.qmd
-    - tidy.qmd
-    - timeseries.qmd
-    - scaling.qmd
-    - summary.qmd
 
 format:
   html:
     theme:
-      light: cosmo
-    code-fold: false
+      light: sandstone
+    code-fold: true
     css: custom.css
+    toc: true
     backgroundcolor: "#F5F5F5"
-
-
 
 # good themes: default, cosmo, flatly, lumen, minty, pulse, sandstone, solar, united
 # favourites: minty, cosmo
