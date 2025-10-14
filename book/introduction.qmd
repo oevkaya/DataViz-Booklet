@@ -4,7 +4,7 @@ In today's world, with the explosive growth of data, deriving valuable insights 
 essential. Particularly, when working with big data, statistical analysis alone is often insufficient; supporting these analyses with
 powerful visualizations should be regarded as key priority in data-driven decision making.
 
-## Purpose of new writing (No Dataframes Here)
+## Purpose of new writing
 
 This booklet writing aims to explore how classic visualization techniques are applied to "small" to "moderate" datasets to the realm of big data. 
 Our created examples aim to demonstrate that data visualization is not merely about creating graphs, but about generating meaningful insights. 
@@ -32,9 +32,56 @@ data visualization, illustrating how technical tools in data science can be used
 The Scottish Index of Multiple Deprivation is a relative measure of deprivation across 6,976
 small areas (called data zones). If an area is identified as ‘deprived’, this can relate to people having a low income but it can also mean fewer
 resources or opportunities. SIMD looks at the extent to which an area is deprived across seven domains: income, employment, education, health,
-access to services, crime and housing. The dataset description was obtained from the Scottish Government's [Official SIMD
+access to services, crime and housing. 
+
+The dataset description was obtained from the Scottish Government's [Official SIMD
 Documentation](https://www.gov.scot/collections/scottish-index-of-multiple-deprivation-2020/)
 
 **Fringe Festival Data Set 2024:** 
 
+Festival data sets are crucial fort he inclusive and sustainable event organizations in a large scale environment. Regarding the economical impact of the such festivals in a city, the collected data sets can be very informative to have MRI scan for any organized festival. By keeping this in our mind, as a specific data set, we considered the Edinburgh Fringe Festival Data for our visualizations. The Edinburgh Fringe Festival is the world’s largest arts festival, held annually in Edinburgh, Scotland. It showcases a vast range of performances, including theater, comedy, dance, music, and
+more, with thousands of productions taking place across various venues in the city. 
+
+The Fringe is open to anyone who wants to perform, making it a hub for both emerging and established artists. The festival typically runs for three weeks every August and attracts a diverse audience from around the world, contributing significantly to the city’s cultural vibrancy and economy. 
+The [Edinburgh Festival City API](https://api.edinburghfestivalcity.com/) provides a wealth of data about events taking place in Edinburgh, even we focused on the 2024 Fringe Data, similar illustrations can be done for other years. 
+
+**Scottish heart disease statistics, Public Health Scotland** 
+
+As another field, Scottish health data, namely the Scottish heart disease statistics has been investigated through the data visualization examples that are created. Mainly, the summary of discharges from hospital and deaths in Scotland resulting from a heart condition (including coronary heart disease, heart attack, heart failure and angina). Data sets are primarily stored under the breakdown of "by council area" and "by health board", covering both hearth disease activity and the heart disease mortality in separate data set files. 
+
+All publications and supporting material to this topic area can be found on the [PHS Heart Disease Website](https://publichealthscotland.scot/population-health/conditions-and-diseases/heart-disease-and-stroke/overview/). The main data set files that we have been used are directly available in the website for [Scottish Heart Disease Statistics](https://www.opendata.nhs.scot/dataset/scottish-heart-disease-statistics)
+
+**Data on air pollutants in Scottish cities, Air Quality Scotland** 
+
 Check from here: https://github.com/idiltuzkaya/big_data_viz/tree/main
+
+## Writing Roadmap
+
+This booklet project follows a systematic approach: starting from data comprehension and preparation, moving on to creating effective
+visualizations, and finally scaling them to a big data context while ensuring reproducibility. 
+
+Below is a an overview of the major stages:
+
+- **Data Exploration, Understanding, and Preprocessing**
+
+In this step, EDA(Exploratory Data Analysis) was performed to gain a solid understanding of the datasets' fundamental characteristics. This
+process involved handling missing values, assessing normality, and identifying data types. In order to apply various visualization
+techniques, we deliberately focused on datasets containing diverse data types.
+
+- **Initial Visualizations with Small/Moderate Datasets**
+
+For this step, we followed an iterative approach to decide which type of visualizations were suitable for each dataset in terms of aesthetics and
+readability. Testing these techniques initially on smaller datasets provided remarkable insights into how appropriate they scale in context
+of big data.
+
+- **Scaling Visualizations to Big Data**
+
+As a general practice, after having moderate experiences on data visualizations with the classical size of examples, big data set has been added to the examples lifecycle. In principle, after seeing the certain aspects of the big data meaning and its realtionship between data visualization, new examples are created accordingly. 
+
+- **Documentation and Reproducibility**
+
+For the ease of writing, initial examples and codes are created on local individual computers whereas the collaboration has been supported by the help of joint github repositories. After concluding the initial examples during the main collaboration period, a new quarto template has been created to transfer the materials into booklet style iteratively. 
+
+
+
+

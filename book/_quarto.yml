@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Data Visualization Booklet"
-  author: "Selin Aytan, Idil Tuzkaya and Ozan Evkaya"
+  author: "Ozan Evkaya, Selin Aytan, and Idil Tuzkaya"
   favicon: polar-bear-airpods-no-background.png
   description: An illustrative booklet using various size data sets.
   keyword: data science, data visualization, big data, ggplot2, data wrangling
@@ -26,6 +26,8 @@ book:
 
   chapters:
     - index.qmd
+    - introduction.qmd
+    - Rsetup.qmd
 
 format:
   html:
