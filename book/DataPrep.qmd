@@ -1,0 +1,11 @@
+# Pipeline & Data Preparation
+
+## Importance of Data Preparation
+
+## Preparation Process in R
+
+## Normality Assesment
+
+## Challenges and Decisions
+
+### Wrap-up

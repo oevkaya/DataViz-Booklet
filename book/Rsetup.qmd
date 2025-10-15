@@ -85,3 +85,13 @@ R codebase scales effortlessly from laptop-sized prototypes to terabyte-level pr
 development and robust performance in deployment.
 
 ## Main R Environment Setup
+
+You need to install the exact packages that we used for specific data visualizations for the reproduction in general. This is the main R packages that we have benefited from during the data visualization process on Rstudio envrionment
+
+```{r eval=FALSE}
+# For data importing on excel format
+library(readxl)
+# For data wrangling and cleaning
+library(tidyverse)
+```
+

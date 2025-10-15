@@ -28,6 +28,8 @@ book:
     - index.qmd
     - introduction.qmd
     - Rsetup.qmd
+    - Fundamentals.qmd
+    - DataPrep.qmd
 
 format:
   html:
